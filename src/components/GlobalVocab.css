@@ -18,7 +18,7 @@
   background: none;
   border: none;
   font-size: 0.9rem;
-  color: #9A7060;
+  color: var(--text-hint);
   cursor: pointer;
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
@@ -28,20 +28,20 @@
 }
 
 .global-vocab__back-btn:hover {
-  background: #F2E4D8;
+  background: var(--bg-hover);
 }
 
 .global-vocab__title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #2C1608;
+  color: var(--text-primary);
   margin: 0;
   flex: 1;
 }
 
 .global-vocab__summary {
   font-size: 0.85rem;
-  color: #9A7060;
+  color: var(--text-hint);
 }
 
 .global-vocab__section {
@@ -55,43 +55,43 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #B5432A;
+  color: var(--accent);
   margin: 0;
 }
 
 .global-vocab__section-title--unseen {
-  color: #C49A82;
+  color: var(--text-muted);
 }
 
 .global-vocab__table-wrap {
   overflow-x: auto;
   border-radius: 12px;
-  border: 1.5px solid #E8C9B8;
+  border: 1.5px solid var(--border);
 }
 
 .vocab-table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
-  background: #FEF8F4;
+  background: var(--bg-card);
 }
 
 .vocab-table th {
-  background: #FDF0E8;
+  background: var(--bg-card-alt);
   padding: 0.6rem 0.75rem;
   text-align: left;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #C49A82;
-  border-bottom: 1.5px solid #E8C9B8;
+  color: var(--text-muted);
+  border-bottom: 1.5px solid var(--border);
 }
 
 .vocab-table td {
   padding: 0.6rem 0.75rem;
-  border-bottom: 1px solid #F2E4D8;
-  color: #2C1608;
+  border-bottom: 1px solid var(--bg-hover);
+  color: var(--text-primary);
   vertical-align: middle;
 }
 
@@ -100,46 +100,46 @@
 }
 
 .vocab-table tbody tr:hover td {
-  background: #FDF0E8;
+  background: var(--bg-card-alt);
 }
 
 .vocab-table--dim tbody tr td {
-  color: #C49A82;
+  color: var(--text-muted);
 }
 
 .vocab-table__arabic {
   font-family: 'Noto Naskh Arabic', 'Amiri', serif;
   font-size: 1.1rem;
   direction: rtl;
-  color: #B5432A;
+  color: var(--accent);
   font-weight: 600;
 }
 
 .vocab-table--dim .vocab-table__arabic {
-  color: #C49A82;
+  color: var(--text-muted);
 }
 
 .vocab-table__roman {
   font-style: italic;
-  color: #C49A82;
+  color: var(--text-muted);
 }
 
 .vocab-table__set {
   font-size: 0.75rem;
-  color: #E07A45;
+  color: var(--accent-orange);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 .vocab-table__correct {
-  color: #4F9165;
+  color: var(--correct);
   font-weight: 700;
   text-align: center;
 }
 
 .vocab-table__incorrect {
-  color: #B5432A;
+  color: var(--accent);
   font-weight: 700;
   text-align: center;
 }
@@ -154,9 +154,9 @@
   white-space: nowrap;
 }
 
-.vocab-table__badge--noun       { background: #F2E4D8; color: #7A4030; }
-.vocab-table__badge--verb       { background: #D8EFE0; color: #3D7350; }
-.vocab-table__badge--adjective  { background: #FDF0E0; color: #A0601A; }
-.vocab-table__badge--participle { background: #EDE8F5; color: #5B3E8A; }
-.vocab-table__badge--phrase     { background: #E8F0FE; color: #2E5BAA; }
-.vocab-table__badge--preposition{ background: #F5F0E8; color: #6B5A3A; }
+.vocab-table__badge--noun       { background: var(--badge-noun-bg);   color: var(--badge-noun-color); }
+.vocab-table__badge--verb       { background: var(--badge-verb-bg);   color: var(--badge-verb-color); }
+.vocab-table__badge--adjective  { background: var(--badge-adj-bg);    color: var(--badge-adj-color); }
+.vocab-table__badge--participle { background: var(--badge-part-bg);   color: var(--badge-part-color); }
+.vocab-table__badge--phrase     { background: var(--badge-phrase-bg); color: var(--badge-phrase-color); }
+.vocab-table__badge--preposition{ background: var(--badge-prep-bg);   color: var(--badge-prep-color); }

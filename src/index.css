@@ -9,12 +9,97 @@
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --bg-page:     #FBF3ED;
+  --bg-card:     #FEF8F4;
+  --bg-card-alt: #FDF0E8;
+  --bg-hover:    #F2E4D8;
+
+  --border:      #E8C9B8;
+  --border-card: #D9B09A;
+
+  --text-primary:   #2C1608;
+  --text-secondary: #7A4030;
+  --text-muted:     #C49A82;
+  --text-hint:      #9A7060;
+
+  --accent:        #B5432A;
+  --accent-hover:  #9C3822;
+  --accent-orange: #E07A45;
+
+  --correct:       #4F9165;
+  --correct-hover: #3D7350;
+
+  --card-front:        #E8C9B8;
+  --card-front-border: #D9B09A;
+  --card-back:         #B5432A;
+  --card-front-text:   #2C1608;
+
+  --daily-bg:             #2C1608;
+  --daily-text:           #FEF8F4;
+  --daily-muted:          #C49A82;
+  --daily-bar-bg:         rgba(255, 255, 255, 0.12);
+  --daily-stats-color:    rgba(255, 255, 255, 0.45);
+  --daily-mastered-color: #F5C4A8;
+  --daily-seen-color:     #E07A45;
+
+  --badge-noun-bg:    #F2E4D8; --badge-noun-color:    #7A4030;
+  --badge-verb-bg:    #D8EFE0; --badge-verb-color:    #3D7350;
+  --badge-adj-bg:     #FDF0E0; --badge-adj-color:     #A0601A;
+  --badge-part-bg:    #EDE8F5; --badge-part-color:    #5B3E8A;
+  --badge-phrase-bg:  #E8F0FE; --badge-phrase-color:  #2E5BAA;
+  --badge-prep-bg:    #F5F0E8; --badge-prep-color:    #6B5A3A;
+}
+
+[data-theme="night"] {
+  color-scheme: dark;
+
+  --bg-page:     #090E1C;
+  --bg-card:     #0D1428;
+  --bg-card-alt: #152035;
+  --bg-hover:    #1C2A42;
+
+  --border:      #1E3058;
+  --border-card: #254070;
+
+  --text-primary:   #DDE8F5;
+  --text-secondary: #8AAAC8;
+  --text-muted:     #3D5A78;
+  --text-hint:      #5E7A98;
+
+  --accent:        #D85C3A;
+  --accent-hover:  #BA4828;
+  --accent-orange: #E07A45;
+
+  --correct:       #4FA872;
+  --correct-hover: #3D8A5E;
+
+  --card-front:        #152035;
+  --card-front-border: #1E3058;
+  --card-back:         #1A3265;
+  --card-front-text:   #DDE8F5;
+
+  --daily-bg:             #0D1835;
+  --daily-text:           #DDE8F5;
+  --daily-muted:          #3D5A78;
+  --daily-bar-bg:         rgba(255, 255, 255, 0.08);
+  --daily-stats-color:    rgba(255, 255, 255, 0.35);
+  --daily-mastered-color: #7AABE8;
+  --daily-seen-color:     #4A80C8;
+
+  --badge-noun-bg:    #152035; --badge-noun-color:    #8AAAC8;
+  --badge-verb-bg:    #0A2018; --badge-verb-color:    #4FA872;
+  --badge-adj-bg:     #1C1808; --badge-adj-color:     #C08040;
+  --badge-part-bg:    #151028; --badge-part-color:    #8878C0;
+  --badge-phrase-bg:  #0A1430; --badge-phrase-color:  #5880D0;
+  --badge-prep-bg:    #141820; --badge-prep-color:    #7888A0;
 }
 
 body {
   margin: 0;
-  background: #FBF3ED;
-  color: #2C1608;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  transition: background 0.3s, color 0.3s;
 }
 
 #root {

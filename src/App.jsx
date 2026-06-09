@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import vocabularyData from './data/vocabulary.json';
 import { useProgress } from './hooks/useProgress';
+import { useNightMode } from './hooks/useNightMode';
 import { SetSelector } from './components/SetSelector';
 import { Quiz } from './components/Quiz';
 import { GlobalVocab } from './components/GlobalVocab';
@@ -9,9 +10,14 @@ import './App.css';
 
 export default function App() {
   const { progress, recordResult, undoResult } = useProgress();
+  const { isNight, toggle: toggleNight } = useNightMode();
   const [view, setView] = useState('home');
   const [activeSet, setActiveSet] = useState(null);
   const dailySet = getDailySet(vocabularyData.sets);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isNight ? 'night' : '');
+  }, [isNight]);
   const [showRomanized, setShowRomanized] = useState(true);
   const isMobile = window.matchMedia('(max-width: 640px)').matches;
   const effectiveShowRomanized = isMobile ? true : showRomanized;
@@ -62,6 +68,14 @@ export default function App() {
             onChange={e => setShowRomanized(e.target.checked)}
           />
           Show romanization
+        </label>
+        <label className="toggle-label">
+          <input
+            type="checkbox"
+            checked={isNight}
+            onChange={toggleNight}
+          />
+          Night mode
         </label>
       </div>
     </div>

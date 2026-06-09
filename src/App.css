@@ -2,7 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #FBF3ED;
+  background: var(--bg-page);
+  transition: background 0.3s;
 }
 
 .app__content {
@@ -17,10 +18,14 @@
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
-  background: #FEF8F4;
-  border: 1.5px solid #E8C9B8;
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
   border-radius: 10px;
   padding: 0.5rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: background 0.3s, border-color 0.3s;
 }
 
 .toggle-label {
@@ -29,14 +34,14 @@
   gap: 0.5rem;
   font-size: 0.82rem;
   font-weight: 600;
-  color: #7A4030;
+  color: var(--text-secondary);
   cursor: pointer;
   user-select: none;
 }
 
 .toggle-label input[type="checkbox"] {
   cursor: pointer;
-  accent-color: #B5432A;
+  accent-color: var(--accent);
   width: 15px;
   height: 15px;
 }

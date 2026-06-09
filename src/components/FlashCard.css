@@ -36,12 +36,12 @@
 }
 
 .flashcard__face--front {
-  background: #E8C9B8;
-  border: 1.5px solid #D9B09A;
+  background: var(--card-front);
+  border: 1.5px solid var(--card-front-border);
 }
 
 .flashcard__face--back {
-  background: #B5432A;
+  background: var(--card-back);
   transform: rotateY(180deg);
   color: white;
 }
@@ -60,7 +60,7 @@
   text-align: center;
   margin: 0;
   line-height: 1.3;
-  color: #2C1608;
+  color: var(--card-front-text);
 }
 
 .flashcard__face--back .flashcard__text {
@@ -82,7 +82,7 @@
 
 .flashcard__hint {
   font-size: 0.8rem;
-  color: #9E6F5A;
+  color: var(--text-hint);
   margin: 0;
   margin-top: 0.5rem;
 }
@@ -120,29 +120,29 @@
 }
 
 .btn--correct {
-  background: #4F9165;
+  background: var(--correct);
   color: white;
 }
 
 .btn--correct:hover {
-  background: #3D7350;
+  background: var(--correct-hover);
 }
 
 .btn--incorrect {
-  background: #B5432A;
+  background: var(--accent);
   color: white;
 }
 
 .btn--incorrect:hover {
-  background: #9C3822;
+  background: var(--accent-hover);
 }
 
 .btn--undo {
-  background: #F2E4D8;
-  color: #9A7060;
+  background: var(--bg-hover);
+  color: var(--text-hint);
 }
 
 .btn--undo:hover {
-  background: #E8C9B8;
-  color: #7A4030;
+  background: var(--border);
+  color: var(--text-secondary);
 }
