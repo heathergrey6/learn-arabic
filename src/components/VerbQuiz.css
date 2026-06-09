@@ -1,0 +1,243 @@
+.verb-quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.verb-quiz__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.verb-quiz__back-btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  color: var(--text-hint);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+  font-family: inherit;
+}
+
+.verb-quiz__back-btn:hover {
+  background: var(--bg-hover);
+}
+
+.verb-quiz__title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.verb-quiz__score {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.verb-quiz__score-correct   { color: var(--correct); }
+.verb-quiz__score-incorrect { color: var(--accent); }
+
+.verb-quiz__card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.verb-quiz__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.verb-quiz__tense {
+  color: var(--accent);
+}
+
+.verb-quiz__dot {
+  color: var(--text-muted);
+}
+
+.verb-quiz__pronoun {
+  color: var(--text-primary);
+  font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.verb-quiz__pronoun-en {
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.verb-quiz__verb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.verb-quiz__verb-en {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.verb-quiz__verb-ar {
+  font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--accent);
+  direction: rtl;
+}
+
+.verb-quiz__verb-rom {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.verb-quiz__input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.verb-quiz__input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+
+.verb-quiz__input:focus {
+  border-color: var(--accent);
+}
+
+.verb-quiz__input::placeholder {
+  color: var(--text-muted);
+}
+
+.verb-quiz__check-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.verb-quiz__check-btn:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.verb-quiz__check-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.verb-quiz__error {
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-align: center;
+}
+
+.verb-quiz__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.verb-quiz__result--correct {
+  background: color-mix(in srgb, var(--correct) 12%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--correct) 30%, transparent);
+}
+
+.verb-quiz__result--incorrect {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+.verb-quiz__result-verdict {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.verb-quiz__result--correct .verb-quiz__result-verdict { color: var(--correct); }
+.verb-quiz__result--incorrect .verb-quiz__result-verdict { color: var(--accent); }
+
+.verb-quiz__result-answer {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.verb-quiz__result-ar {
+  font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  direction: rtl;
+}
+
+.verb-quiz__result-rom {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.verb-quiz__result-feedback {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.verb-quiz__next-btn {
+  margin-top: 0.25rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s;
+}
+
+.verb-quiz__next-btn:hover {
+  opacity: 0.88;
+}

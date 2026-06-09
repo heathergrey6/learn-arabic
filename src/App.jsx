@@ -6,6 +6,7 @@ import { SetSelector } from './components/SetSelector';
 import { Quiz } from './components/Quiz';
 import { GlobalVocab } from './components/GlobalVocab';
 import { getDailySet } from './utils/dailySet';
+import { VerbQuiz } from './components/VerbQuiz';
 import './App.css';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
   const [view, setView] = useState('home');
   const [activeSet, setActiveSet] = useState(null);
   const dailySet = getDailySet(vocabularyData.sets);
+  const verbCards = vocabularyData.sets.flatMap(s => s.cards).filter(c => c.pos === 'verb');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', isNight ? 'night' : '');
@@ -37,6 +39,7 @@ export default function App() {
             progress={progress}
             onSelectSet={startQuiz}
             onViewGlobal={() => setView('global')}
+            onVerbQuiz={() => setView('verb-quiz')}
           />
         )}
 
@@ -48,6 +51,13 @@ export default function App() {
             recordResult={recordResult}
             undoResult={undoResult}
             showRomanized={effectiveShowRomanized}
+          />
+        )}
+
+        {view === 'verb-quiz' && (
+          <VerbQuiz
+            cards={verbCards}
+            onBack={() => setView('home')}
           />
         )}
 

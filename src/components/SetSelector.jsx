@@ -1,7 +1,7 @@
 import { formatDailyDate } from '../utils/dailySet';
 import './SetSelector.css';
 
-export function SetSelector({ sets, dailySet, progress, onSelectSet, onViewGlobal }) {
+export function SetSelector({ sets, dailySet, progress, onSelectSet, onViewGlobal, onVerbQuiz }) {
   const totalWords = sets.reduce((sum, s) => sum + s.cards.length, 0);
   const seenWords = sets.flatMap(s => s.cards).filter(c => progress[c.id]).length;
 
@@ -22,9 +22,14 @@ export function SetSelector({ sets, dailySet, progress, onSelectSet, onViewGloba
           <span className="set-selector__arabic-title">تعلّم العربية</span>
           <span className="set-selector__subtitle">Learn Arabic</span>
         </h1>
-        <button className="set-selector__global-btn" onClick={onViewGlobal}>
-          Global Vocab ({totalWords} words)
-        </button>
+        <div className="set-selector__header-actions">
+          <button className="set-selector__global-btn" onClick={onViewGlobal}>
+            Global Vocab ({totalWords})
+          </button>
+          <button className="set-selector__global-btn" onClick={onVerbQuiz}>
+            Verb Quiz
+          </button>
+        </div>
       </div>
 
       {dailySet && (() => {
