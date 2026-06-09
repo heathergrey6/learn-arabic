@@ -1,0 +1,162 @@
+.global-vocab {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.global-vocab__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.global-vocab__back-btn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  color: #9A7060;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.global-vocab__back-btn:hover {
+  background: #F2E4D8;
+}
+
+.global-vocab__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2C1608;
+  margin: 0;
+  flex: 1;
+}
+
+.global-vocab__summary {
+  font-size: 0.85rem;
+  color: #9A7060;
+}
+
+.global-vocab__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.global-vocab__section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B5432A;
+  margin: 0;
+}
+
+.global-vocab__section-title--unseen {
+  color: #C49A82;
+}
+
+.global-vocab__table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1.5px solid #E8C9B8;
+}
+
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: #FEF8F4;
+}
+
+.vocab-table th {
+  background: #FDF0E8;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #C49A82;
+  border-bottom: 1.5px solid #E8C9B8;
+}
+
+.vocab-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #F2E4D8;
+  color: #2C1608;
+  vertical-align: middle;
+}
+
+.vocab-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.vocab-table tbody tr:hover td {
+  background: #FDF0E8;
+}
+
+.vocab-table--dim tbody tr td {
+  color: #C49A82;
+}
+
+.vocab-table__arabic {
+  font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  font-size: 1.1rem;
+  direction: rtl;
+  color: #B5432A;
+  font-weight: 600;
+}
+
+.vocab-table--dim .vocab-table__arabic {
+  color: #C49A82;
+}
+
+.vocab-table__roman {
+  font-style: italic;
+  color: #C49A82;
+}
+
+.vocab-table__set {
+  font-size: 0.75rem;
+  color: #E07A45;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.vocab-table__correct {
+  color: #4F9165;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vocab-table__incorrect {
+  color: #B5432A;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vocab-table__badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.vocab-table__badge--noun       { background: #F2E4D8; color: #7A4030; }
+.vocab-table__badge--verb       { background: #D8EFE0; color: #3D7350; }
+.vocab-table__badge--adjective  { background: #FDF0E0; color: #A0601A; }
+.vocab-table__badge--participle { background: #EDE8F5; color: #5B3E8A; }
+.vocab-table__badge--phrase     { background: #E8F0FE; color: #2E5BAA; }
+.vocab-table__badge--preposition{ background: #F5F0E8; color: #6B5A3A; }

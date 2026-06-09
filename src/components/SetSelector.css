@@ -1,0 +1,269 @@
+.set-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.set-selector__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.set-selector__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0;
+}
+
+.set-selector__arabic-title {
+  font-family: 'Noto Naskh Arabic', 'Amiri', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #B5432A;
+  direction: rtl;
+  line-height: 1.2;
+}
+
+.set-selector__subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C49A82;
+}
+
+.set-selector__global-btn {
+  background: #FEF8F4;
+  border: 1.5px solid #E8C9B8;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7A4030;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.set-selector__global-btn:hover {
+  background: #F2E4D8;
+}
+
+.set-selector__section {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C49A82;
+  margin: 0;
+}
+
+.daily-card {
+  background: #2C1608;
+  border-radius: 16px;
+  padding: 1.4rem 1.5rem;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.daily-card:hover {
+  opacity: 0.92;
+}
+
+.daily-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.daily-card__label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #C49A82;
+  margin-bottom: 0.2rem;
+}
+
+.daily-card__date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #FEF8F4;
+}
+
+.daily-card__count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C49A82;
+  white-space: nowrap;
+}
+
+.daily-card__progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.daily-card__bar {
+  height: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+}
+
+.daily-card__bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.daily-card__bar-fill--seen {
+  background: #E07A45;
+}
+
+.daily-card__bar-fill--mastered {
+  background: #F5C4A8;
+}
+
+.daily-card__stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.daily-card__mastered {
+  color: #F5C4A8;
+  font-weight: 600;
+}
+
+.daily-card__start-btn {
+  background: #B5432A;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+  text-align: center;
+  width: 100%;
+}
+
+.daily-card__start-btn:hover {
+  opacity: 0.88;
+}
+
+.set-selector__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.set-card {
+  background: #FEF8F4;
+  border: 1.5px solid #E8C9B8;
+  border-radius: 14px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.set-card:hover {
+  border-color: #B5432A;
+  background: #FDF0E8;
+}
+
+.set-card__name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2C1608;
+}
+
+.set-card__count {
+  font-size: 0.8rem;
+  color: #C49A82;
+  font-weight: 500;
+}
+
+.set-card__progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.set-card__bar {
+  height: 5px;
+  background: #E8C9B8;
+  border-radius: 99px;
+  overflow: hidden;
+  position: relative;
+}
+
+.set-card__bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.set-card__bar-fill--seen {
+  background: #E07A45;
+}
+
+.set-card__bar-fill--mastered {
+  background: #B5432A;
+}
+
+.set-card__stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #C49A82;
+}
+
+.set-card__mastered {
+  color: #B5432A;
+  font-weight: 600;
+}
+
+.set-card__start-btn {
+  margin-top: 0.25rem;
+  background: #B5432A;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  font-family: inherit;
+}
+
+.set-card__start-btn:hover {
+  opacity: 0.88;
+}
