@@ -15,12 +15,16 @@ export function FlashCard({ card, showRomanized, onCorrect, onIncorrect, onUndo,
     else onIncorrect();
   }
 
+  const displayEnglish = card.english.replace(/\s*\(root:[^)]+\)/i, '');
+  const rootMatch = card.english.match(/\(root:\s*([^)]+)\)/i);
+  const root = rootMatch ? rootMatch[1].trim() : null;
+
   return (
     <div className="flashcard-scene">
       <div className={`flashcard ${flipped ? 'flashcard--flipped' : ''}`} onClick={handleFlip}>
         <div className="flashcard__face flashcard__face--front">
           <span className="flashcard__label">English</span>
-          <p className="flashcard__text">{card.english}</p>
+          <p className="flashcard__text">{displayEnglish}</p>
           {!flipped && <p className="flashcard__hint">tap to reveal Arabic</p>}
         </div>
         <div className="flashcard__face flashcard__face--back">
@@ -29,6 +33,7 @@ export function FlashCard({ card, showRomanized, onCorrect, onIncorrect, onUndo,
           {showRomanized && (
             <p className="flashcard__romanized">{card.romanized}</p>
           )}
+          {root && <p className="flashcard__root">root: {root}</p>}
         </div>
       </div>
 

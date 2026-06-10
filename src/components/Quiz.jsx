@@ -90,7 +90,7 @@ export function Quiz({ cards, setName, onFinish, recordResult, undoResult, showR
             <ul className="quiz-results__list">
               {results.incorrect.map(c => (
                 <li key={c.id}>
-                  <span className="quiz-results__en">{c.english}</span>
+                  <span className="quiz-results__en">{c.english.replace(/\s*\(root:[^)]+\)/i, '')}</span>
                   <span className="quiz-results__arrow">→</span>
                   <span className="quiz-results__ar">{c.arabic}</span>
                   {showRomanized && (
