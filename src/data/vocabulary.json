@@ -406,7 +406,13 @@
         { "id": "alibaba_22", "english": "gold (m.)", "arabic": "ذهب", "romanized": "Dhahab", "pos": "noun" },
         { "id": "alibaba_23", "english": "jewelry (f. pl.)", "arabic": "مجوهرات", "romanized": "mjawharaat", "pos": "noun" },
         { "id": "alibaba_24", "english": "pocket (f.)", "arabic": "جيبة", "romanized": "jiibe", "pos": "noun" },
-        { "id": "alibaba_25", "english": "donkey (m.)", "arabic": "حمار", "romanized": "Himaar", "pos": "noun" }
+        { "id": "alibaba_25", "english": "donkey (m.)", "arabic": "حمار", "romanized": "Himaar", "pos": "noun" },
+        { "id": "alibaba_26", "english": "to care / be interested (root: H-T-M)", "arabic": "بيهتم", "romanized": "biyiHtam", "pos": "verb" },
+        { "id": "alibaba_28", "english": "to be scared (root: KH-W-F)", "arabic": "بيخاف", "romanized": "biykhaaf", "pos": "verb" },
+        { "id": "alibaba_29", "english": "quarter (¼) (m.)", "arabic": "ربع", "romanized": "ruba3", "pos": "noun" },
+        { "id": "alibaba_30", "english": "to put (root: H-T-T)", "arabic": "بيحط", "romanized": "biHoTT", "pos": "verb" },
+        { "id": "alibaba_31", "english": "to take (root: KH-DH)", "arabic": "بياخد", "romanized": "biyaakhid", "pos": "verb" },
+        { "id": "alibaba_32", "english": "shocked (m. / f.)", "arabic": "مصدوم / مصدومة", "romanized": "masduum / masduume", "pos": "adjective" }
       ]
     }
   ]
