@@ -387,7 +387,7 @@
         { "id": "alibaba_03", "english": "firewood (m.)", "arabic": "حطب", "romanized": "HaTab", "pos": "noun" },
         { "id": "alibaba_04", "english": "to sell (root: B-Y-3)", "arabic": "بيبيع", "romanized": "biybii3", "pos": "verb" },
         { "id": "alibaba_05", "english": "as usual", "arabic": "كالعادة", "romanized": "kala3aade", "pos": "phrase" },
-        { "id": "alibaba_06", "english": "to rest (root: R-T-H)", "arabic": "بيرتاح", "romanized": "biyrataH", "pos": "verb" },
+        { "id": "alibaba_06", "english": "to rest (root: R-T-H)", "arabic": "بيرتاح", "romanized": "birTaH", "pos": "verb" },
         { "id": "alibaba_07", "english": "suddenly", "arabic": "فجأة", "romanized": "faj2a", "pos": "phrase" },
         { "id": "alibaba_08", "english": "far (m. / f.)", "arabic": "بعيد / بعيدة", "romanized": "ba3iid / ba3iide", "pos": "adjective" },
         { "id": "alibaba_09", "english": "to hide / conceal oneself (root: KH-B-A)", "arabic": "بيتخبى", "romanized": "biytkhaba", "pos": "verb" },
