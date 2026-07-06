@@ -412,7 +412,24 @@
         { "id": "alibaba_29", "english": "quarter (¼) (m.)", "arabic": "ربع", "romanized": "ruba3", "pos": "noun" },
         { "id": "alibaba_30", "english": "to put (root: H-T-T)", "arabic": "بيحط", "romanized": "biHoTT", "pos": "verb" },
         { "id": "alibaba_31", "english": "to take (root: KH-DH)", "arabic": "بياخد", "romanized": "biyaakhid", "pos": "verb" },
-        { "id": "alibaba_32", "english": "shocked (m. / f.)", "arabic": "مصدوم / مصدومة", "romanized": "masduum / masduume", "pos": "adjective" }
+        { "id": "alibaba_32", "english": "shocked (m. / f.)", "arabic": "مصدوم / مصدومة", "romanized": "masduum / masduume", "pos": "adjective" },
+        { "id": "alibaba_33", "english": "to kill (root: Q-T-L)", "arabic": "بيقتل", "romanized": "biy2til", "pos": "verb" },
+        { "id": "alibaba_34", "english": "dead (m. / f.)", "arabic": "ميّت / ميّتة", "romanized": "mayyit / mayyite", "pos": "adjective" },
+        { "id": "alibaba_35", "english": "to cry (root: B-K-Y)", "arabic": "بيبكي", "romanized": "biybke", "pos": "verb" },
+        { "id": "alibaba_36", "english": "to feel (root: H-S-S)", "arabic": "بيحسّ", "romanized": "biyHiss", "pos": "verb" },
+        { "id": "alibaba_37", "english": "villains / evil people (pl.)", "arabic": "أشرار", "romanized": "ashraar", "pos": "noun" },
+        { "id": "alibaba_38", "english": "to suspect (root: SH-K-K)", "arabic": "بيشك", "romanized": "biyshukk", "pos": "verb" },
+        { "id": "alibaba_39", "english": "quickly", "arabic": "بسرعة", "romanized": "bisur3a", "pos": "phrase" },
+        { "id": "alibaba_40", "english": "password (f.)", "arabic": "كلمة السر", "romanized": "kalimet is-sirr", "pos": "noun" },
+        { "id": "alibaba_41", "english": "to look for (root: D-W-R)", "arabic": "بيدوّر", "romanized": "biydawwir", "pos": "verb" },
+        { "id": "alibaba_42", "english": "to worry (root: 2-L-Q)", "arabic": "بيقلق", "romanized": "ba2laq", "pos": "verb" },
+        { "id": "alibaba_43", "english": "to bury (root: D-F-N)", "arabic": "بيدفن", "romanized": "biydifin", "pos": "verb" },
+        { "id": "alibaba_44", "english": "corpse / dead body (f.)", "arabic": "جثة", "romanized": "jutha", "pos": "noun" },
+        { "id": "alibaba_45", "english": "trader / merchant (m.)", "arabic": "تاجر", "romanized": "taajir", "pos": "noun" },
+        { "id": "alibaba_46", "english": "jar / jars (f.)", "arabic": "جرّة / جرّات", "romanized": "jarre / jarraat", "pos": "noun" },
+        { "id": "alibaba_47", "english": "plan (f.)", "arabic": "خطّة", "romanized": "khuTTa", "pos": "noun" },
+        { "id": "alibaba_48", "english": "to suffocate (root: KH-N-2)", "arabic": "بيختنق", "romanized": "biykhtniq", "pos": "verb" },
+        { "id": "alibaba_49", "english": "to live (root: 3-Y-SH)", "arabic": "بيعيش", "romanized": "biy3iish", "pos": "verb" }
       ]
     }
   ]
