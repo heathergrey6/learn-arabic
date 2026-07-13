@@ -375,7 +375,9 @@
         { "id": "body_37", "english": "mouth (m.)", "arabic": "تمّ", "romanized": "tamm", "pos": "noun" },
         { "id": "body_38", "english": "tooth / teeth (m.)", "arabic": "سن / أسنان", "romanized": "senn / asnan", "pos": "noun" },
         { "id": "body_39", "english": "voice / sound", "arabic": "صوت", "romanized": "soat", "pos": "noun" },
-        { "id": "body_40", "english": "taste (style)", "arabic": "ذوق", "romanized": "zow2", "pos": "noun" }
+        { "id": "body_40", "english": "taste (style)", "arabic": "ذوق", "romanized": "zow2", "pos": "noun" },
+        { "id": "body_41", "english": "pain (m.)", "arabic": "وجع", "romanized": "waja3", "pos": "noun" },
+        { "id": "body_42", "english": "shoulder / shoulders (m.)", "arabic": "كتف / أكتاف", "romanized": "kitif / aktaaf", "pos": "noun" }
       ]
     },
     {
@@ -430,6 +432,15 @@
         { "id": "alibaba_47", "english": "plan (f.)", "arabic": "خطّة", "romanized": "khuTTa", "pos": "noun" },
         { "id": "alibaba_48", "english": "to suffocate (root: KH-N-2)", "arabic": "بيختنق", "romanized": "biykhtniq", "pos": "verb" },
         { "id": "alibaba_49", "english": "to live (root: 3-Y-SH)", "arabic": "بيعيش", "romanized": "biy3iish", "pos": "verb" }
+      ]
+    },
+    {
+      "id": "conversations",
+      "name": "Conversations",
+      "cards": [
+        { "id": "conv_01", "english": "gift (f.)", "arabic": "هدية", "romanized": "hadiyye", "pos": "noun" },
+        { "id": "conv_02", "english": "angry", "arabic": "معصّب", "romanized": "mo3aSSab", "pos": "adjective" },
+        { "id": "conv_03", "english": "listening device / speaker / headphones / stethoscope (f.)", "arabic": "سمّاعة", "romanized": "sammaa3a", "pos": "noun" }
       ]
     }
   ]
